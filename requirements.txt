@@ -5,3 +5,6 @@ streamlit-TTS
 SpeechRecognition~=3.10.4
 pydub~=0.25.1
 protobuf~=5.28.2
+python-dotenv
+openai
+ffmpeg
