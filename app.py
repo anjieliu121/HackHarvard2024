@@ -41,4 +41,5 @@ if audio_bytes:
          st.write(text_output)
          temp_text_to_speech("This sounds like an important phone call. Anjie will call you later.")
       except Exception as e:
+         st.error("Inarticulate voice is not recognized.")
          print(f"Error: {e}")
