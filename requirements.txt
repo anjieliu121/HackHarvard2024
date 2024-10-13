@@ -8,3 +8,5 @@ protobuf~=5.28.2
 python-dotenv
 openai
 ffmpeg
+flask-cors
+flask
