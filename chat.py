@@ -32,7 +32,7 @@ def classify_conversation():
         ending = model.generate_content(convo + ending_prompt).text
         return jsonify({"response" : ending})
 
-    continue_prompt = "\n".join(conversation_history) + "\nAI Response: "
+    continue_prompt = "\n".join(conversation_history) + "\nAI Response: (Do not include 'AI Response' as a part of the response)"
     continue_response = model.generate_content(continue_prompt).text
     print("AI's Response: " + continue_response)
     conversation_history.append("AI Response: " + continue_response)
