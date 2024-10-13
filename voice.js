@@ -55,11 +55,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
     let exchanges = 0;
 
     const onSilence = () => {
-        log.textContent += 'silence\n';
+        //log.textContent += 'silence\n';
     };
 
     const onSpeak = () => {
-        log.textContent += 'speaking\n';
+        //log.textContent += 'speaking\n';
     };
 
     const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
