@@ -13,6 +13,7 @@ def handle_message(message):
 
     response = model.generate_content(prompt).text
     conversation_history.append("AI Response: " + response)
+    print(conversation_history)
     return response
 
 def classify_conversation():
